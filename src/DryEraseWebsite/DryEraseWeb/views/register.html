@@ -1,0 +1,57 @@
+<div class="container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="span4" style="border-radius: 10px; border: 1px solid; padding-left: 10px;" >
+            <form name="myForm">
+                <fieldset>
+                    <legend>Sign Up For DryEraseWeb</legend>
+                    <label style="text-align: left">Full Name:</label>
+                    <div class="input-prepend">
+                        <span class="add-on"><i class="icon-user"></i></span>
+                        <input type="text" ng-model="FullName" placeholder="Full Name" required>
+                    </div>
+
+                    <label>Email:</label>
+                    <div class="input-prepend">
+                        <span class="add-on"><i class="icon-envelope"></i></span>
+                        <input type="email" ng-model="Email" placeholder="Email" required>
+                    </div>
+
+                    <label>Password:</label>
+                    <div class="input-prepend">
+                        <span class="add-on"><i class="icon-key"></i></span>
+                        <input type="password" ng-model="Password" placeholder="Password" required>
+                    </div>
+                    <div class="offset1">
+                        <button type="button" class="btn btn-primary" ng-click="registerUser()">Sign up</button>
+                    </div>
+                </fieldset>
+                         
+            </form>
+        </div>
+            
+        <div class="span1">Or Login Via</div>
+        
+        <div class="span4" style="border-radius: 10px; border: 1px solid; padding-left: 10px;" >
+            <fieldset>
+                <legend><strong>Or Login Via</strong></legend>
+                <div >
+                    <div >
+                        <div>
+                            <div >
+                                <a class="btn" href="/api/auth/facebook">
+                                    <i class="ui-icon-unlocked"></i>
+                                    Facebook
+                                </a>
+                            </div>
+                            <div >
+                                <a class="btn" href="/api/auth/linkedin">
+                                    <img src="Content/images/fairhead-icons/fc-webicon-linkedin.png" style="max-width: 30px;" />
+                                    LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="en" ng-app="dryeraseweb">
+    <head>
+        <meta charset="utf-8">
+        <title>Dry Erase Web</title>
+        <link rel="stylesheet" href="Content/bootstrap.css">
+        <link rel="stylesheet" href="Content/bootstrap-responsive.css">
+<!--        <link rel="stylesheet" href="Content/bootstrap-readable.css">-->
+        <link rel="stylesheet" href="Content/app.css">
+    </head>
+    <body style="padding-top: 57px;">
+        <div class="navbar navbar-fixed-top navbar-inverse" >
+            <div class="navbar-inner">
+                <div class="container">
+                   <!-- <a class="btn btn-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>-->
+                    <a class="brand" href="#">DryEraseWeb<sup class="small">[Beta]</sup></a>
+                    <ul class="nav">
+                        <li ng-class="{active: routeIs('/how-it-works')}"><a href="#/how-it-works"> Overview</a></li>
+                        <li ng-class="{active: routeIs('/who-we-are')}"><a href="#/who-we-are"> About Us</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li ng-class="{active: routeIs('/help')}"><a href="#/help"><i class="icon-info-sign"></i> Help</a></li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="loading">
+            <div class="blockG" id="rotateG_01">
+            </div>
+            <div class="blockG" id="rotateG_02">
+            </div>
+            <div class="blockG" id="rotateG_03">
+            </div>
+            <div class="blockG" id="rotateG_04">
+            </div>
+            <div class="blockG" id="rotateG_05">
+            </div>
+            <div class="blockG" id="rotateG_06">
+            </div>
+            <div class="blockG" id="rotateG_07">
+            </div>
+            <div class="blockG" id="rotateG_08">
+            </div>
+        </div>
+
+        <ng-view></ng-view>
+        
+        <!-- In production use:
+            <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-resource.min.js"></script>
+            -->
+        <script src="Scripts/jquery-1.9.1.js"> </script>
+        <script src="Scripts/bootstrap.js"> </script>
+
+        <!-- script src="lib/underscore-1.4.4/underscore-min.js"></script -->
+        <script src="Scripts/angular-ui-ieshiv.js"> </script>
+        <script src="Scripts/angular.js"> </script>
+        <script src="Scripts/angular-resource.js"> </script>
+        <script src="Scripts/angular-cookies.js"> </script>
+        <script src="Scripts/angular-ui.js"> </script>
+        <script src="Scripts/angular-bootstrap.js"> </script>
+        <!-- script src="lib/angular-underscore/angular-underscore.js"></script -->
+
+        <script src="app.js"> </script>
+
+
+       <!-- <script src="Scripts/services/localizedMessages.js"> </script>
+        <script src="Scripts/services/authentication/current-user.js"> </script>
+        <script src="Scripts/services/authentication/retry-queue.js"> </script>
+        <script src="Scripts/services/authentication/authentication.js"> </script>
+        <script src="Scripts/services/authentication/interceptor.js"> </script>
+
+        <script src="Scripts/directives/modal.js"> </script>
+
+        <script src="Scripts/controllers/NavbarController.js"> </script>
+       
+
+        <script src="Scripts/login/login.js"> </script>
+
+        <script src="Scripts/services/Events.js"> </script>
+        <script src="Scripts/services/Persons.js"> </script>
+        <script src="Scripts/services/LoadingService.js"> </script>-->
+
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Angular.UI.Bootstrap</id>
+    <version>0.1.0</version>
+    <title>AngularJS UI Bootstrap</title>
+    <authors>AngularUI Team (Packaged by Jeremy Howard)</authors>
+    <owners>AngularUI Team (Packaged by Jeremy Howard)</owners>
+    <licenseUrl>https://github.com/angular-ui/bootstrap/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://angular-ui.github.com/bootstrap/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Bootstrap components written in pure AngularJS</description>
+    <summary>A set of native AngularJS directives based on Twitter Bootstrap's markup and CSS. As a result no dependency on jQuery or Bootstrap's JavaScript is required.</summary>
+    <releaseNotes />
+    <copyright />
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Twitter.Bootstrap" version="2.2.1" />
+      <dependency id="angularjs" version="1.0.2" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>

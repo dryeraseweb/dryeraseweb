@@ -1,15 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a browser action with kittens.",
+  "name": "Dry Erase Web",
+  "description": "Dry Erase Web .",
   "version": "1.0",
 
   "permissions": [
     "https://secure.flickr.com/"
   ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  }
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css" : ["hello.css"],
+      "js": [ "jquery-1.9.1.js", "jquery-ui-1.10.1.custom.js" "hello.js"]
+    }
+  ]
 }

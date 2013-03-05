@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dry Erase Web",
+  "description": "Dry Erase Web",
+  "version": "1.0",
+
+  "permissions": [
+    "https://www.parsecdn.com/"
+  ],
+  "browser_action": {
+    "default_icon": "images/Icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css" : ["css/popup.css"],
+      "js": [ "js/lib/jquery-1.9.1.js", "js/lib/jquery-ui-1.10.1.custom.js", "js/lib/angular.js", "js/lib/angular-ui.js", "js/app/popup.js"]
+    } 
+  ]
+}

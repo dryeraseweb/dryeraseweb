@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DryEraseWeb", "DryEraseWeb\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1DC8A1B8-F74F-4F90-A97F-8B69109AA251}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DryErasePlugin", "DryErasePlugin\DryErasePlugin.vbproj", "{EBE43F85-5B90-4EE7-9194-83D81EE69328}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BAD9A632-7A50-4B40-A270-1CACFF8A9EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAD9A632-7A50-4B40-A270-1CACFF8A9EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAD9A632-7A50-4B40-A270-1CACFF8A9EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE43F85-5B90-4EE7-9194-83D81EE69328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE43F85-5B90-4EE7-9194-83D81EE69328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE43F85-5B90-4EE7-9194-83D81EE69328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE43F85-5B90-4EE7-9194-83D81EE69328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

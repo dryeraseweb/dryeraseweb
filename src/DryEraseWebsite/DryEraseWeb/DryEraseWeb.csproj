@@ -404,7 +404,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LinkedInAuthProvider.cs" />
-    <Compile Include="Comment.cs" />
+    <Compile Include="DomainModel\Comment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />

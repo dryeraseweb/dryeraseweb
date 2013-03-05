@@ -16,7 +16,12 @@
     {
       "matches": ["*://*/*"],
       "css" : ["css/popup.css"],
-      "js": [ "js/lib/jquery-1.9.1.js", "js/lib/jquery-ui-1.10.1.custom.js", "js/lib/angular.js", "js/lib/angular-ui.js", "js/app/popup.js"]
-    } 
-  ]
+      "js": [ "js/lib/jquery-1.9.1.js", "js/lib/jquery-ui-1.10.1.custom.js", "js/lib/angular.js", "js/lib/angular-ui.js", "js/app/content.js"]
+    }],
+  "background": {
+    "scripts": ["js/app/background.js"],
+    "persistent": true
+  }
+  
+  
 }

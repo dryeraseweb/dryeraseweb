@@ -114,7 +114,8 @@
     <Content Include="images\glyphicons-halflings-white.png" />
     <Content Include="images\glyphicons-halflings.png" />
     <Content Include="images\Icon.png" />
-    <Content Include="js\app\contentLoadScript.js" />
+    <Content Include="js\app\content.js" />
+    <Content Include="js\app\background.js" />
     <Content Include="js\lib\angular-ui.js" />
     <Content Include="js\lib\angular-ui.min.js" />
     <Content Include="js\lib\angular.js" />

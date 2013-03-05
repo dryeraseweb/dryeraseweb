@@ -77,7 +77,20 @@ var kittenGenerator = {
   }
 };
 
+chrome.runtime.onMessageExternal.addListener(
+          function (request, sender, sendResponse) {
+              console.log(sender.tab ?
+                  "from a content script:" + sender.tab.url :
+                  "from the extension");
+              if (request.type == "badge") {
+                  chrome.browserAction.setBadgeText({ text: request.count });
+                  sendResponse({ farewell: "goodbye" });
+              }
+          });
+
 // Run our kitten generation script as soon as the document's DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
-  kittenGenerator.requestKittens();
+    //  kittenGenerator.requestKittens();
+
+   
 });

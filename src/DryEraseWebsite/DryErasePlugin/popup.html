@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
-  <head ng-app="dryEraseWebPopup" ng-csp>
-    <title>DryEraseWeb</title>
-    <style>
-      body {
+    <!--  <head ng-app="dryEraseWebPopup" ng-csp>-->
+    <head>
+        <title>DryEraseWeb</title>
+        <link type="text/css" href="css/popup.css"/>
+        <style >
+            /* body {
         min-width: 357px;
         overflow-x: hidden;
       }
@@ -14,21 +16,48 @@
         vertical-align: middle;
         width: 75px;
         height: 75px;
-      }
-    </style>
+      }*/
+        </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-     -->
-    <script src="js/lib/angular.js"></script>
-    <script src="js/lib/angular-ui.js"></script>
-    <script src="js/app/popup.js"></script>
-  </head>
+        <!--
+            - JavaScript and HTML must be in separate files: see our Content Security
+            - Policy documentation[1] for details and explanation.
+            -
+            - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+            -->
+        <script src="js/lib/angular.js"> </script>
+        <script src="js/lib/angular-ui.js"> </script>
+        <script src="js/app/popup.js"> </script>
+    </head>
     <body >
-            <h1>Hello World!!!!!!</h1>
+        <div class="plugWrap">
+            <div class="tagWrap">
+                <a href="#">tag</a>
+                <a href="#">tag</a>
+                <a href="#">tag</a>
+            </div>
+            <form class="tagform" action="" method="get" accept-charset="utf-8">
+                <input type="text" name="some_name" value="add tag" id="some_name">
+                <input type="submit" value="Continue &rarr;">
+            </form>
+            <div id="cmntWrap">
+                <ul>
+                    <li class="cf">
+                        <img src="#" />
+                        <p class="comment">this is what somebody says</p>
+                        <p class="commentInfo">this is comment information</p>
+                    </li>
+                    <li class="cf">
+                        <img src="#" />
+                        <p class="comment">this is what somebody says</p>
+                        <p class="commentInfo">this is comment information</p>
+                    </li>
+                </ul>
+            </div>
+            <form class="tagform" action="" method="get" accept-charset="utf-8">
+                <input type="text" name="some_name" value="add tag" id="Text1">
+                <input type="submit" value="Continue &rarr;">
+            </form>
+        </div>
     </body>
 </html>
-

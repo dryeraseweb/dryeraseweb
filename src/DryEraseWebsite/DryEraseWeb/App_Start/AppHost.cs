@@ -112,7 +112,7 @@ namespace DryEraseWeb.Service.WebHost.App_Start
 
             container.Register<ICacheClient>(new MemoryCacheClient());
             container.Register<IUserAuthRepository>(new InMemoryAuthRepository());
-            container.Register<CommentService>(new CommentService());
+            container.Register<DryEraseService>(new DryEraseService());
 //            container.Register<IUserAuthRepository>(new MongoDBAuthRepository(db, true));
 
 

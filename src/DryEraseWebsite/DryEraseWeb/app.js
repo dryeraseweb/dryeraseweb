@@ -1,16 +1,16 @@
 'use strict';
 
-//Register the the services with the 'dryeraseweb' application
-var dryeraseweb = angular.module('dryeraseweb', ['ngResource', 'ngCookies', 'ui', 'bootstrap']);
+//Register the the services with the 'DryEraseApp' application
+var DryEraseApp = angular.module('DryEraseApp', ['ngResource', 'ngCookies', 'ui', 'bootstrap']);
 
 
-dryeraseweb.constant('I18N.MESSAGES', {
+DryEraseApp.constant('I18N.MESSAGES', {
     'login.error.notAuthorized':"You do not have the necessary access permissions.  Do you want to login as someone else?",
     'login.error.notAuthenticated':"You must be logged in to access this part of the application."
 });
 
 //All items attached to $rootScope are global
-dryeraseweb.run(function ($rootScope) {
+DryEraseApp.run(function ($rootScope) {
 
     //register global getKeys() function
     $rootScope.getKeys = function (obj) {
@@ -29,7 +29,7 @@ dryeraseweb.run(function ($rootScope) {
     };
 });
 
-dryeraseweb.config(function ($routeProvider) {
+DryEraseApp.config(function ($routeProvider) {
 
 	$routeProvider.
 //	 //Forgot Controller

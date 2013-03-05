@@ -382,9 +382,10 @@
     <Content Include="Scripts\ui-bootstrap-tpls-0.1.0-SNAPSHOT.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.1.0-SNAPSHOT.min.js" />
     <Content Include="views\help.html" />
-    <Content Include="views\how-it-works.html" />
+    <Content Include="views\overview.html" />
     <Content Include="views\register.html" />
     <Content Include="views\welcome.html" />
+    <Content Include="views\about.html" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -399,16 +400,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AppHost.cs" />
-    <Compile Include="CommentService.cs" />
+    <Compile Include="DomainModel\Requests.cs" />
+    <Compile Include="service\DryEraseService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LinkedInAuthProvider.cs" />
-    <Compile Include="DomainModel\Comment.cs" />
+    <Compile Include="DomainModel\CommentPost.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
-    <Folder Include="services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -426,13 +427,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1147</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://DryEraseWeb-Dev/</IISUrl>
-          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://DryEraseWeb-Dev/</IISAppRootUrl>
           <NTLMAuthentication>True</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

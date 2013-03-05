@@ -6,13 +6,13 @@
   "version": "1.0",
 
   "permissions": [
-    "https://secure.flickr.com/"
+    "https://www.parsecdn.com/"
   ],
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "css" : ["hello.css"],
-      "js": [ "jquery-1.9.1.js", "jquery-ui-1.10.1.custom.js" "hello.js"]
-    }
+      "css" : ["sidebar.css"],
+      "js": [ "jquery-1.9.1.js", "jquery-ui-1.10.1.custom.js", "parse-1.2.1.min.js", "parse.js","sidebar.js"]
+    } 
   ]
 }

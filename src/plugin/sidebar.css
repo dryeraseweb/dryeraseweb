@@ -1,0 +1,83 @@
+   /* ==========================================================================
+       clearfix
+       ========================================================================== */
+
+    .cf {
+      *zoom: 1;
+    }
+    .cf:before,
+    .cf:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    .cf:after {
+      clear: both;
+    }
+
+    /* ==========================================================================
+       float
+       ========================================================================== */
+
+    .fl { float: left; }
+    .fr { float: right; }
+
+    /* ==========================================================================
+       list
+       ========================================================================== */
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    /* ==========================================================================
+       styles
+       ========================================================================== */
+
+
+    #plugWrap {
+      position: fixed;
+      right: 0;
+      width: 300px;
+      padding: 10px 0;
+      background: #FFF;
+      border: 1px solid #222;
+    }
+
+    .tagWrap, #tagform {
+      padding: 0 10px;
+    }
+
+    .tagform {
+      margin: 8px 10px;
+    }
+
+    .tagform input {
+      display: inline-block;
+      width: 170px;
+      margin: 0;
+    }
+
+    .tagform input[type="submit"] {
+      width: 100px;
+    }
+
+    #cmntWrap li{
+      padding: 8px 10px;
+      border-bottom: 1px solid #646464;
+    }
+
+    #cmntWrap img {
+      width: 80px;
+      display: inline-block;
+      float: left;
+    }
+
+    #cmntWrap p {
+      width: 176px;
+      float: right;
+      margin: 14px 10px 0 0;
+      padding: 0;
+      font-size: 14px;
+    }

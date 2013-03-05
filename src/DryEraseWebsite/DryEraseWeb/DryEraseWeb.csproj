@@ -108,6 +108,8 @@
     <Content Include="Content\images\dryeraseweb_549x549.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\Icon.png" />
+    <Content Include="Content\images\Logo.png" />
     <Content Include="Content\select2.css" />
     <Content Include="Content\select2.png" />
     <Content Include="Content\select2x2.png" />
@@ -177,6 +179,8 @@
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
+    <None Include="PublishProfiles\dryeraseweb - FTP.pubxml" />
+    <None Include="PublishProfiles\dryeraseweb - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.min.js" />
@@ -372,21 +376,26 @@
     <Content Include="views\how-it-works.html" />
     <Content Include="views\register.html" />
     <Content Include="views\welcome.html" />
-    <Content Include="web.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AppHost.cs" />
+    <Compile Include="CommentService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LinkedInAuthProvider.cs" />
+    <Compile Include="Comment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
@@ -413,9 +422,10 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1147</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
+          <IISUrl>http://DryEraseWeb-Dev/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://DryEraseWeb-Dev/</IISAppRootUrl>
+          <NTLMAuthentication>True</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
           </CustomServerUrl>

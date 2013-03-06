@@ -49,7 +49,7 @@ DryErasePlugin.controller('MainController', function MainController($scope, $htt
         Comment.save({}, { Url: $scope.getUrl(), Text: $scope.comment }, function() {
             $log.log('saved');
 
-            $scope.comments.unshift({ Text: $scope.comment, Posted: new Date(), Updated: new Date() });
+            $scope.comments.unshift({ Text: $scope.comment, posted_date: Date.now().toLocaleString(), Updated: Date.now() });
             $scope.comment = null;
         }, function(error) {
             $log.error('Failed due to error' + error);

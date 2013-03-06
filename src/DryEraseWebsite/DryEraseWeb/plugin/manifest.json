@@ -17,7 +17,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "css" : [ "css/lib/bootstrap.min.css", "css/lib/jquery.ui.all.css","css/popup.css"],
+      "css" : [ "css/lib/bootstrap.min.css", "css/popup.css"],
       "js": [ "js/lib/jquery-1.9.1.js", "js/app/content.js"]
     }],
   "background": {

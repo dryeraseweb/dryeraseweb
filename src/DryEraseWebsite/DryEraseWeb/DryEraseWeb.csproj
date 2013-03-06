@@ -192,29 +192,18 @@
     <Content Include="plugin\css\lib\bootstrap-responsive.min.css" />
     <Content Include="plugin\css\lib\bootstrap.min.css" />
     <Content Include="plugin\css\lib\font-awesome.min.css" />
-    <Content Include="plugin\css\lib\jquery-ui.css" />
-    <Content Include="plugin\css\lib\jquery.ui.accordion.css" />
-    <Content Include="plugin\css\lib\jquery.ui.all.css" />
-    <Content Include="plugin\css\lib\jquery.ui.autocomplete.css" />
-    <Content Include="plugin\css\lib\jquery.ui.base.css" />
-    <Content Include="plugin\css\lib\jquery.ui.button.css" />
-    <Content Include="plugin\css\lib\jquery.ui.core.css" />
-    <Content Include="plugin\css\lib\jquery.ui.datepicker.css" />
-    <Content Include="plugin\css\lib\jquery.ui.dialog.css" />
-    <Content Include="plugin\css\lib\jquery.ui.menu.css" />
-    <Content Include="plugin\css\lib\jquery.ui.progressbar.css" />
-    <Content Include="plugin\css\lib\jquery.ui.resizable.css" />
-    <Content Include="plugin\css\lib\jquery.ui.selectable.css" />
-    <Content Include="plugin\css\lib\jquery.ui.slider.css" />
-    <Content Include="plugin\css\lib\jquery.ui.spinner.css" />
-    <Content Include="plugin\css\lib\jquery.ui.tabs.css" />
-    <Content Include="plugin\css\lib\jquery.ui.theme.css" />
-    <Content Include="plugin\css\lib\jquery.ui.tooltip.css" />
+    <Content Include="plugin\css\lib\jquery.tagsinput.css" />
     <Content Include="plugin\js\lib\angular-cookies.js" />
     <Content Include="plugin\js\lib\angular-cookies.min.js" />
     <Content Include="plugin\js\lib\angular-resource.js" />
     <Content Include="plugin\js\lib\angular-resource.min.js" />
+    <Content Include="plugin\js\lib\jquery.tagsinput.js" />
+    <Content Include="plugin\js\lib\jquery.tagsinput.min.js" />
     <Content Include="plugin\manifest.json" />
+    <None Include="plugin.crx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="plugins.pem" />
     <None Include="PublishProfiles\dryeraseweb - FTP.pubxml" />
     <None Include="PublishProfiles\dryeraseweb - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />

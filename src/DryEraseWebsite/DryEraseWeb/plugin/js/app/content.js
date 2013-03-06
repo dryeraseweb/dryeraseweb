@@ -3,9 +3,10 @@
 var DryEraseService = {
     load: function () {
 //        alert(window.location);
-        $.post('http://DryEraseWeb-Dev/api/itemcount?format=json', { Url: window.location.href}, function(data) {
-          
-            chrome.extension.sendMessage({ type: "badge", count: data.toString() }, function(response) {
+        $.post('http://DryEraseWeb-Dev/api/itemcount?format=json', { "Url": window.location.href}, function(data) {
+
+            var badge = data > 0 ? data.toString() : "";
+            chrome.extension.sendMessage({ type: "badge", count: badge }, function(response) {
             });
         })
             

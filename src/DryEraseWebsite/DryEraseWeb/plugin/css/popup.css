@@ -47,7 +47,7 @@ ul, li {
     border: 1px solid #222;
 }
 
-.tagWrap, .tagform { padding: 0 10px; }
+.tagWrap { padding: 0 10px; }
 
 
 .tagform input[type="text"] {

@@ -1,7 +1,7 @@
 'use strict';
 
 //Register the the services with the 'DryErasePlugin' application
-var DryErasePlugin = angular.module('DryErasePlugin', []);
+var DryErasePlugin = angular.module('DryErasePlugin', ['ngResource', 'ngCookies']);
 
 
 DryErasePlugin.constant('I18N.MESSAGES', {

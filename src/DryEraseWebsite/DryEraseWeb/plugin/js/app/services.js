@@ -1,6 +1,14 @@
-﻿angular.module('DryEraseServices', ['ngResource']).
-    factory('Whiteboard', function($resource) {
-        return $resource('https://DryEraseWeb-Dev/api/whiteboard/:url', {url:'@url'}, {
-            get: { method: 'GET', isArray: false }
-        });
-    });
+﻿'use strict';
+
+DryErasePlugin.factory('Whiteboard', function ($resource) {
+        return $resource('http://DryEraseWeb-Dev/api/whiteboard/:url', { url: '@url' });
+});
+
+
+DryErasePlugin.factory('Comment', function ($resource) {
+    return $resource('http://DryEraseWeb-Dev/api/comment', {  });
+});
+
+DryErasePlugin.factory('Tag', function ($resource) {
+    return $resource('http://DryEraseWeb-Dev/api/tag', {  });
+});

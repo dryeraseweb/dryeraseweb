@@ -1,34 +1,25 @@
 ﻿<div class="plugWrap">
     <div class="tagWrap">
-        <a href="#">tag</a>
-        <a href="#">tag</a>
-        <a href="#">tag</a>
+        <span ng-repeat="tag in tags">
+            <a href="#" >{{tag.Text}}</a>&nbsp;
+        </span>
     </div>
     <form class="tagform" action="" method="get" accept-charset="utf-8">
-        <input type="text" name="some_name" value="add tag" id="some_name">
-        <input type="submit" value="Continue &rarr;">
+        <input type="text"  placeholder="add tag" ng-model="tag">
+        <input type="button" ng-click="addTag()" value="Add">
     </form>
     <div id="cmntWrap">
         <ul >
             <li class="cf" ng-repeat="comment in comments">
-<!--                <img src="#" />-->
+                <!--                <img src="#" />-->
                 <p class="comment">{{comment.Text}}</p>
                 <p class="commentInfo">{{comment.Posted}}</p>
             </li>
-            <!--<li class="cf">
-                    <img src="#" />
-                    <p class="comment">this is what somebody says</p>
-                    <p class="commentInfo">this is comment information</p>
-                </li>
-                <li class="cf">
-                    <img src="#" />
-                    <p class="comment">this is what somebody says</p>
-                    <p class="commentInfo">this is comment information</p>
-                </li>-->
+            
         </ul>
     </div>
     <form class="tagform" action="" method="get" accept-charset="utf-8">
-        <input type="text" name="some_name" value="add tag" id="Text1">
-        <input type="submit" value="Continue &rarr;">
+        <input type="text"  placeholder="add a ccomment" id="new_post" ng-model="comment" >
+        <input type="button" ng-click="postComment()" value="Post Comment" class="btn" />
     </form>
 </div>

@@ -13,14 +13,14 @@ namespace DryEraseWeb.DomainModel
         public string Text { get; set; }
     }
 
-    [Route("/comment", "POST")]
+    [Route("/tag", "POST")]
     public class TagPost : IReturnVoid
     {
         public string Url { get; set; }
         public string Text { get; set; }
     }
 
-    [Route("/whitboard", "GET")]
+    [Route("/whiteboard/{Url}", "GET")]
     public class WhiteboardRequest : IReturn<Whiteboard>
     {
         public string Url { get; set; }

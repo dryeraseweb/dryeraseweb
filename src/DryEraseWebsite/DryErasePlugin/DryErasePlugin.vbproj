@@ -116,11 +116,14 @@
     <Content Include="images\Icon.png" />
     <Content Include="js\app\content.js" />
     <Content Include="js\app\background.js" />
+    <Content Include="js\app\controllers\MainController.js" />
+    <Content Include="js\app\services.js" />
     <Content Include="js\lib\angular-ui.js" />
     <Content Include="js\lib\angular-ui.min.js" />
     <Content Include="js\lib\angular.js" />
     <Content Include="js\lib\angular.min.js" />
     <Content Include="manifest.json" />
+    <Content Include="views\main.html" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -163,7 +166,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6813</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

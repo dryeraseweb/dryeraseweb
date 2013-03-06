@@ -63,7 +63,7 @@ DryErasePlugin.config(function($routeProvider) {
 //Welcome
         when('/main', {
             controller: 'MainController',
-            templateUrl: '/views/main.html'
+            templateUrl: 'views/main.html'
         }).
         //Default to Event List
         otherwise({ redirectTo: '/main' });

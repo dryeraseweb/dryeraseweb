@@ -188,9 +188,27 @@
     <Content Include="Content\font\fontawesome-webfont.ttf" />
     <Content Include="Content\font\fontawesome-webfont.eot" />
     <Content Include="Content\font\FontAwesome.otf" />
+    <Content Include="plugin\manifest.json" />
     <None Include="PublishProfiles\dryeraseweb - FTP.pubxml" />
     <None Include="PublishProfiles\dryeraseweb - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="plugin\css\popup.css" />
+    <Content Include="plugin\images\glyphicons-halflings-white.png" />
+    <Content Include="plugin\images\glyphicons-halflings.png" />
+    <Content Include="plugin\images\Icon.png" />
+    <Content Include="plugin\js\app\background.js" />
+    <Content Include="plugin\js\app\content.js" />
+    <Content Include="plugin\js\app\controllers\MainController.js" />
+    <Content Include="plugin\js\app\popup.js" />
+    <Content Include="plugin\js\app\services.js" />
+    <Content Include="plugin\js\lib\angular-ui.js" />
+    <Content Include="plugin\js\lib\angular-ui.min.js" />
+    <Content Include="plugin\js\lib\angular.js" />
+    <Content Include="plugin\js\lib\angular.min.js" />
+    <Content Include="plugin\js\lib\jquery-1.9.1.js" />
+    <Content Include="plugin\js\lib\jquery-ui-1.10.1.custom.js" />
+    <Content Include="plugin\popup.html" />
+    <Content Include="plugin\views\main.html" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.min.js" />
     <Content Include="Scripts\angular-bootstrap.js" />
@@ -410,6 +428,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="plugin\css\lib\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

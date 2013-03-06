@@ -17,11 +17,12 @@ DryErasePlugin.controller('MainController', function MainController($scope, $htt
         
         $scope.tabUrl = tab[0].url;
         $scope.getUrl = function () {
-            return encodeURIComponent( $scope.tabUrl );
+//            return encodeURIComponent( $scope.tabUrl );
+            return  $scope.tabUrl;
         };
 
         
-        $scope.whiteboard = Whiteboard.get({ url: $scope.getUrl() }, function (whiteboard) {
+        $scope.whiteboard = Whiteboard.save({}, { url: $scope.getUrl() }, function (whiteboard) {
             $scope.comments = whiteboard.Comments;
             $scope.tags = whiteboard.Tags;
 

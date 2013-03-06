@@ -20,8 +20,15 @@ namespace DryEraseWeb.DomainModel
         public string Text { get; set; }
     }
 
-    [Route("/whiteboard/{Url}", "GET")]
+    [Route("/whiteboard", "POST")]
     public class WhiteboardRequest : IReturn<Whiteboard>
+    {
+        public string Url { get; set; }
+    }
+
+
+    [Route("/itemcount", "POST")]
+    public class WhiteboardItemCountRequest : IReturn<int>
     {
         public string Url { get; set; }
     }

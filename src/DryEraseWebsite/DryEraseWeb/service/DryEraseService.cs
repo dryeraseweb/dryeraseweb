@@ -49,9 +49,14 @@ namespace DryEraseWeb
                                              });
         }
 
-        public Whiteboard Get(WhiteboardRequest aWhiteboardRequest)
+        public Whiteboard Post(WhiteboardRequest aWhiteboardRequest)
         {
             return _dryEraseWebDbService.GetWhiteboard(aWhiteboardRequest.Url);
+        }
+
+        public int Post(WhiteboardItemCountRequest whiteboardItemCountRequest)
+        {
+            return _dryEraseWebDbService.GetWhiteboardItemCount(whiteboardItemCountRequest.Url);
         }
     }
 
@@ -95,6 +100,18 @@ namespace DryEraseWeb
             Whiteboard whiteboard = base.QueryById<Whiteboard>(url);
 
             return whiteboard;
+        }
+
+        public int GetWhiteboardItemCount(string url)
+        {
+            var whiteboard = GetWhiteboard(url);
+
+            if (null == whiteboard)
+            {
+                return 0;
+            }
+
+            return whiteboard.Comments.Count + whiteboard.Tags.Count;
         }
     }
 

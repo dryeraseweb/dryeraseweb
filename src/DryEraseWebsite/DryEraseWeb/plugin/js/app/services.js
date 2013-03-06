@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 DryErasePlugin.factory('Whiteboard', function ($resource) {
-    return $resource('http://DryEraseWeb-Dev/api/whiteboard/:url', { url: '@url' });
+    return $resource('http://DryEraseWeb-Dev/api/whiteboard', {});
 });
 
 DryErasePlugin.factory('Comment', function ($resource) {

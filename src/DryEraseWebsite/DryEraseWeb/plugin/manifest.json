@@ -3,10 +3,11 @@
 
   "name": "Dry Erase Web",
   "description": "Dry Erase Web",
-  "version": "1.0",
+  "version": "1.1",
 
   "permissions": [
     "http://dryeraseweb-dev/",
+    "http://dryeraseweb.azurewebsites.net/",
     "tabs"
   ],
   "web_accessible_resources": [ "css/lib/bootstrap.min.css", "css/popup.css"],
@@ -17,13 +18,12 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "css" : [ "css/lib/bootstrap.min.css", "css/popup.css"],
-      "js": [ "js/lib/jquery-1.9.1.js", "js/app/content.js"]
+      "css" : [ ],
+      "js": [ "js/app/content.js"]
     }],
   "background": {
     "scripts": ["js/app/background.js"],
     "persistent": true
   }
-  
-  
+   
 }

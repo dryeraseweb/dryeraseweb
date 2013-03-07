@@ -200,9 +200,6 @@
     <Content Include="plugin\js\lib\jquery.tagsinput.js" />
     <Content Include="plugin\js\lib\jquery.tagsinput.min.js" />
     <Content Include="plugin\manifest.json" />
-    <None Include="plugin.crx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="plugins.pem" />
     <None Include="PublishProfiles\dryeraseweb - FTP.pubxml" />
     <None Include="PublishProfiles\dryeraseweb - Web Deploy.pubxml" />

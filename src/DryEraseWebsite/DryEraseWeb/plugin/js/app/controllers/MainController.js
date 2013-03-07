@@ -26,13 +26,15 @@ DryErasePlugin.controller('MainController', function MainController($scope, $htt
             $scope.comments = whiteboard.Comments;
             $scope.tags = whiteboard.Tags;
 
-            for (var i = 0; i < $scope.comments.length; i++) {
+            if ($scope.comments) {
+                for (var i = 0; i < $scope.comments.length; i++) {
 
-                var c = $scope.comments[i];
-                c.posted_date = (new Date(parseInt(c.Posted.substr(6)))).toLocaleString();
-                c.updated_date = new Date(parseInt(c.Updated.substr(6)));
+                    var c = $scope.comments[i];
+                    c.posted_date = (new Date(parseInt(c.Posted.substr(6)))).toLocaleString();
+                    c.updated_date = new Date(parseInt(c.Updated.substr(6)));
+                }
             }
-         
+
         }, function (error) {
             console.log(error);
         });
